@@ -34,7 +34,8 @@ function filterTable($query)
                     <th>Name</th>
 					<th>Age</th>
                     <th>Gender</th>
-					<th>Country</th>
+                    <th>Country</th>
+					<th>Propic</th>
                     
                 </tr>
 
@@ -46,6 +47,7 @@ function filterTable($query)
                     <td><?php echo $row['age'];?></td>
                     <td><?php echo $row['sex'];?></td>
 					<td><?php echo $row['country'];?></td>
+                    <td> <img src="uploads/"<?php echo $row["pp"]; ?>alt="ProPic"></td>
                 </tr>
                 <?php endwhile;?>
             </table>

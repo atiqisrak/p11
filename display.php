@@ -16,6 +16,7 @@
 	<th> StudentID </th>
 	<th> Name </th>
 	<th> Age </th>
+	<th> ProPic </th>
 	<th> Action </th>
 </tr>
 	
@@ -32,6 +33,8 @@
 	<td> <?php echo $row["ID"]; ?></td>
 	<td> <?php echo $row["Name"]; ?></td>
 	<td> <?php echo $row["Age"]; ?></td>
+	<td> <img src="uploads/"<?php echo $row["pp"]; ?>alt="ProPic"></td>
+	
 	<td><a href="update.php">Update</a> </td>
 </tr>
 <?php
