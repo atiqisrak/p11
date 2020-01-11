@@ -27,15 +27,15 @@ function filterTable($query)
   <body>
         
         <h1>Result:</h1>
-	
+    
             <table border="1" cellpadding="10">
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-					<th>Age</th>
+                    <th>Age</th>
                     <th>Gender</th>
                     <th>Country</th>
-					<th>Propic</th>
+                    <th>Propic</th>
                     
                 </tr>
 
@@ -46,8 +46,8 @@ function filterTable($query)
                     <td><?php echo $row['name'];?></td>
                     <td><?php echo $row['age'];?></td>
                     <td><?php echo $row['sex'];?></td>
-					<td><?php echo $row['country'];?></td>
-                    <td> <img src="uploads/<?php echo $row["pp"]; ?>" alt="ProPic"></td>
+                    <td><?php echo $row['country'];?></td>
+                    <td> <img width="150" height="150" src="uploads/<?php echo $row['pp']; ?>" alt="ProPic"></td>
                 </tr>
                 <?php endwhile;?>
             </table>

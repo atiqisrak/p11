@@ -1,22 +1,25 @@
 <html>
+<head>
+	
+</head>
 <body>
 <center style="width:60%; margin-left:20%;margin-right:20%;">
 <img width=720;heigth:720; src="university.jpg">
 <div><marquee><h2>Welcome to our PHP and MYSQL Project!</h2></marquee></div>
 <form name="reg" action="save.php" method="post" enctype="multipart/form-data">
-<table border="0" bgcolor="#blue" cellpadding="15" margin="10">
+<table border="0" bgcolor="#606060" cellpadding="15" margin="10">
 <tr>
-	<td>ID:</td>
+	<th>ID:</th>
 	<td><input type="text" name="sid" required><br>
 	
 	</td>
 </tr>
 <tr>
-	<td>Name:</td>
+	<th>Name:</th>
 	<td><input type="text" name="sn" required><br></td>
 </tr>
 <tr>
-	<td>Age:</td>
+	<th>Age:</th>
 	<td> <input type="number" name="sa" size="4" min="18" required>
 	 <br>
 	
@@ -24,13 +27,13 @@
 	</td>	
 </tr>
 <tr>
-	<td><span>Sex: </span></td>
+	<th><span>Sex: </span></th>
 	<td><input type="radio" name="gender" value="Male" required> Male
         <input type="radio" name="gender" value="Female" required> Female
 	</td>
 </tr>
 <tr>
-	<td><span>Country: </span></td>
+	<th><span>Country: </span></th>
     <td><select name="co" required>
 	 <option value="">Select country</option>
      <option value="Bangladesh">Bangladesh</option>
@@ -40,10 +43,11 @@
 	 </td>
 </tr>
 <tr>
-	<td>
+	<th>
+		Upload Profile Picture:
 		<input type="file" name="pp">
 
-	</td>
+	</th>
 </tr>
 </table>
 <br>
@@ -58,7 +62,7 @@
 
 <h3>Search student info by ID:</h3>
 <form action="search.php" method="POST">
-<table border="0" bgcolor="#blue" cellpadding="5" >
+<table border="0" bgcolor="blue" cellpadding="5" >
 <tr>
 	<td>
     <input type="text" name="valueToSearch" />
@@ -72,12 +76,12 @@
 <tr>
 <td>
 <form name="delete" action="delete.php" method="post">
-<button style="background:#red;color:#yellow; border:thin;padding:10;">Delete info</button>
+<button style="background:red;color:yellow; border:thin;padding:10;">Delete info</button>
 </form>
 </td>
 <td>
 <form name="update" action="update.php" method="post">
-<button style="background:#red;color:#yellow; border:thin;padding:10;">Update info</button>
+<button style="background:red;color:yellow; border:thin;padding:10;">Update info</button>
 </form>
 </td>
 </tr>
